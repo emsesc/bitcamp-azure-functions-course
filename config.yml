@@ -1,0 +1,19 @@
+title: bitcamp azure functions
+description: >-
+  Serverless architectures offer greater scalability, more flexibility, and
+  quicker time to release, all at a reduced cost. 3-week course on using Azure
+  Functions, Javascript, and External APIs.
+template:
+  repo: bitcamp-azure-functions-template
+  name: bitcamp-azure-functions
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
